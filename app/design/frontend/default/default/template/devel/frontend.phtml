@@ -26,12 +26,12 @@
 body{ padding-top: 4.5ex; }
 
 /* Toolbar */
-#dhmedia_devel_block_frontend {
+#demacmedia_devel_block_frontend {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-
+    background:#fff;
 	z-index: 9990;
 
 	height: 4.5ex;
@@ -52,18 +52,9 @@ body{ padding-top: 4.5ex; }
 	-o-box-shadow: 0 0 5px #999;
 	box-shadow: 0 0 5px #999;
 
-
-	background: #4c4c4c; /* Old browsers */
-	background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(12%,#595959), color-stop(25%,#666666), color-stop(39%,#474747), color-stop(50%,#2c2c2c), color-stop(51%,#000000), color-stop(60%,#111111), color-stop(76%,#2b2b2b), color-stop(91%,#1c1c1c), color-stop(100%,#131313)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C */
 }
 
-#dhmedia_devel_block_frontend:hover {
+#demacmedia_devel_block_frontend:hover {
 	opacity: 1;	
 	-webkit-transition: opacity 0.1s ease-in-out;
 	-moz-transition: opacity 0.1s ease-in-out;
@@ -71,17 +62,22 @@ body{ padding-top: 4.5ex; }
 }
 
 /* Links */
-#dhmedia_devel_block_frontend a {
+#demacmedia_devel_block_frontend a {
 	text-decoration: none;
-	color: #1E7EC8;
+	color: #2c2c2c;
+    font-weight:bold;
 }
-
+#demacmedia_devel_block_frontend a:hover {
+	text-decoration: none;
+	color: #fff;
+    font-weight:bold;
+}
 /* Menu */
-#dhmedia_devel_block_frontend ul {
+#demacmedia_devel_block_frontend ul {
 	display: inline-block;
 }
 
-#dhmedia_devel_block_frontend ul li {
+#demacmedia_devel_block_frontend ul li {
 	position: relative;
 	display: inline-block;
 	margin: 0;
@@ -98,7 +94,7 @@ body{ padding-top: 4.5ex; }
 
 }
 
-#dhmedia_devel_block_frontend ul li:hover {
+#demacmedia_devel_block_frontend ul li:hover {
 	background-color: #000000;
 
 	-webkit-transition: all 0.1s ease-in-out;
@@ -106,18 +102,18 @@ body{ padding-top: 4.5ex; }
 	transition: all 0.1s ease-in-out;
 
 }
-#dhmedia_devel_block_frontend ul li:last-child {
+#demacmedia_devel_block_frontend ul li:last-child {
 	border-right: 1px solid #000;
 }
 
 /* Menu links */
-#dhmedia_devel_block_frontend ul li a {
+#demacmedia_devel_block_frontend ul li a {
 	display: block;
 	padding: 1ex 3ex;
 }
 
 /* "Show on hover" divs */
-#dhmedia_devel_block_frontend ul li .show-on-hover {
+#demacmedia_devel_block_frontend ul li .show-on-hover {
 	position: absolute;
 	z-index: 99999;
 	display: none;
@@ -130,16 +126,16 @@ body{ padding-top: 4.5ex; }
 
 	box-shadow: 0 0 5px #333;
 }
-#dhmedia_devel_block_frontend ul li:hover .show-on-hover {
+#demacmedia_devel_block_frontend ul li:hover .show-on-hover {
 	display: block;
 }
 
-#dhmedia_devel_block_frontend ul li .show-on-hover .result {
+#demacmedia_devel_block_frontend ul li .show-on-hover .result {
 	display: none;
 	clear: both;
 }
 
-#dhmedia_devel_block_frontend ul li .show-on-hover .result.show {
+#demacmedia_devel_block_frontend ul li .show-on-hover .result.show {
 	display: block;
 	border-top: 1px solid #999;
 	margin-top: 1em;
@@ -147,26 +143,26 @@ body{ padding-top: 4.5ex; }
 }
 
 /* Tables */
-#dhmedia_devel_block_frontend table {
+#demacmedia_devel_block_frontend table {
 	border-collapse: separate;
 	border-spacing: 0 1.5ex;
 }
 
-#dhmedia_devel_block_frontend table tr {
+#demacmedia_devel_block_frontend table tr {
 	border-bottom: 1px solid #333;
 	background-color: #999;
 }
-#dhmedia_devel_block_frontend table tr:last-child {
+#demacmedia_devel_block_frontend table tr:last-child {
 	border-bottom: none;
 }
-#dhmedia_devel_block_frontend table td {
+#demacmedia_devel_block_frontend table td {
 	padding: 0.5ex;
 	margin-left: -5px;
 	border-radius: 0 5px 5px 0;
 	color: #000;
 	box-shadow: 0 0 3px #ccc;
 }
-#dhmedia_devel_block_frontend table th {
+#demacmedia_devel_block_frontend table th {
 	padding: 0.5ex 2ex;
 	background-color: #222;
 	border-radius: 5px 0 0 5px;
@@ -175,10 +171,10 @@ body{ padding-top: 4.5ex; }
 }
 
 /* Form elements */
-#dhmedia_devel_block_frontend form {
+#demacmedia_devel_block_frontend form {
 	
 }
-#dhmedia_devel_block_frontend textarea {
+#demacmedia_devel_block_frontend textarea {
 	background-color: #333;
 	border: 1px solid #666;
 	color: #ccc;
@@ -190,37 +186,37 @@ body{ padding-top: 4.5ex; }
 
 	border-radius: 5px;
 }
-#dhmedia_devel_block_frontend input[type='submit'] {
+#demacmedia_devel_block_frontend input[type='submit'] {
 	border-radius: 5px;
 	padding: 1ex;
 	float: right;
 }
 
 /* Doghouse Media link */
-#dhmedia_devel_block_frontend .dhlink {
+#demacmedia_devel_block_frontend .dhlink {
 	float: right;
 	padding: 1ex 3ex;
 	border-left: 1px solid #000;
 }
-#dhmedia_devel_block_frontend .dhlink span {
+#demacmedia_devel_block_frontend .dhlink span {
 	color: #ccc;
 }
-#dhmedia_devel_block_frontend .dhlink:hover {
+#demacmedia_devel_block_frontend .dhlink:hover {
 	background-color: #000;
 }
 
 /* Update notifier box */
-#dhmedia_devel_block_frontend .update-notifier-box {
+#demacmedia_devel_block_frontend .update-notifier-box {
 	float: left;
 	font-weight: bold;
 	padding: 1ex 3ex;
 }
-#dhmedia_devel_block_frontend .update-notifier-box.has-update {
+#demacmedia_devel_block_frontend .update-notifier-box.has-update {
 	-webkit-animation: devel-highlight 15s infinite;
 }
 
 /* Clear fix */
-#dhmedia_devel_block_frontend .clear-fix{
+#demacmedia_devel_block_frontend .clear-fix{
 	clear:both;
 }
 
@@ -363,23 +359,23 @@ body{ padding-top: 4.5ex; }
 }
 </style>
 
-<div id="dhmedia_devel_block_frontend">
+<div id="demacmedia_devel_block_frontend">
 	
-	<a class="dhlink" href="http://www.dhmedia.com.au/?ref=magento-toolbar" target="_blank" title="Doghouse Media - Perth based web agency and Magento specialists"><span>by </span>Doghouse Media</a>
+	<a class="dhlink" href="http://www.demacmedia.com/" target="_blank" title="Demac Media - Ecommerce and Magento specialists"><span>by </span>Demac Media</a>
 	<div class="update-notifier-box"></div>
 	
 	<ul>
-		<li><a href="<?= Mage::getBaseUrl() ?>devel/command/clearcache?return=<?= $this->helper('devel/url')->getCurrentUrl() ?>">Clear cache</a></li>
-		<li><a href="<?= Mage::getBaseUrl() ?>devel/command/reindex?return=<?= $this->helper('devel/url')->getCurrentUrl() ?>">Re-index</a></li>
-		<li><a href="<?= Mage::getBaseUrl() ?>devel/command/hintson?return=<?= $this->helper('devel/url')->getCurrentUrl() ?>">Hints on</a></li>
-		<li><a href="<?= Mage::getBaseUrl() ?>devel/command/hintsoff?return=<?= $this->helper('devel/url')->getCurrentUrl() ?>">Hints off</a></li>
+		<li><a href="<?php echo Mage::getBaseUrl() ?>devel/command/clearcache?return=<?php echo $this->helper('devel/url')->getCurrentUrl() ?>">Clear cache</a></li>
+		<li><a href="<?php echo Mage::getBaseUrl() ?>devel/command/reindex?return=<?php echo $this->helper('devel/url')->getCurrentUrl() ?>">Re-index</a></li>
+		<li><a href="<?php echo Mage::getBaseUrl() ?>devel/command/hintson?return=<?php echo $this->helper('devel/url')->getCurrentUrl() ?>">Hints on</a></li>
+		<li><a href="<?php echo Mage::getBaseUrl() ?>devel/command/hintsoff?return=<?php echo $this->helper('devel/url')->getCurrentUrl() ?>">Hints off</a></li>
 		
-		<li><a href="http://docs.magentocommerce.com" onclick="DevelGlobals.PanelManager.open('dhmedia_devel_block_panel_docs', this.href); return false;">Docs</a></li>
+		<li><a href="http://docs.magentocommerce.com" onclick="DevelGlobals.PanelManager.open('demacmedia_devel_block_panel_docs', this.href); return false;">Docs</a></li>
 		
 		<li>
 			<a href="#">Execute PHP</a>
 			<div class="show-on-hover">
-				<form action="<?= Mage::getBaseUrl() ?>devel/command/execphp">
+				<form action="<?php echo Mage::getBaseUrl() ?>devel/command/execphp">
 					<textarea name="php"></textarea>
 					<input type="submit" value="Execute" />
 					<div class="clear-fix"></div>
@@ -410,7 +406,12 @@ body{ padding-top: 4.5ex; }
 					</tr>
 					<tr>
 						<th>Theme list</th>
-						<td><pre><?php print_r(Mage::getDesign()->getThemeList()) ?></pre></td>
+						<td>
+                            <pre>
+                                <?php $packages = Mage::getDesign()->getThemeList(); ?>
+                                <?php  print_r($packages); ?>
+                            </pre>
+                        </td>
 					</tr>
 					<tr>	
 						<th>Base dir</th>
@@ -424,30 +425,30 @@ body{ padding-top: 4.5ex; }
 			</div>
 		</li>
 		
-		<li><a href="<?= Mage::getBaseUrl() ?>devel/filesystem/edit/type/layout?layout=local.xml" onclick="DevelGlobals.PanelManager.open('dhmedia_devel_block_panel_docs', this.href); return false;">local.xml</a></li>
+		<li><a href="<?php echo Mage::getBaseUrl() ?>devel/filesystem/edit/type/layout?layout=local.xml" onclick="DevelGlobals.PanelManager.open('demacmedia_devel_block_panel_docs', this.href); return false;">local.xml</a></li>
 	</ul>
 	
 	<div class="clear-fix"></div>
 	
 </div>
 
-<div id="dhmedia_devel_block_panel_admin" class="devel-panel" title="Admin">
-	<iframe id="devel-admin" src="<?= Mage::getBaseUrl() . $this->getAdminPath() ?>"></iframe>
+<div id="demacmedia_devel_block_panel_admin" class="devel-panel" title="Admin">
+	<iframe id="devel-admin" src="<?php echo Mage::getBaseUrl() . $this->getAdminPath() ?>"></iframe>
 </div>
 
-<div id="dhmedia_devel_block_panel_docs" class="devel-panel" title="Docs">
+<div id="demacmedia_devel_block_panel_docs" class="devel-panel" title="Docs">
 	<iframe id="devel-docs" src="http://docs.magentocommerce.com"></iframe>
 </div>
 
-<div id="dhmedia_devel_block_panel_editor" class="devel-panel" title="Editor">
-	<iframe id="devel-editor" src="<?= $this->helper('devel/url')->getHelpUrl('panels/editor/usage') ?>"></iframe>
+<div id="demacmedia_devel_block_panel_editor" class="devel-panel" title="Editor">
+	<iframe id="devel-editor" src="<?php echo $this->helper('devel/url')->getHelpUrl('panels/editor/usage') ?>"></iframe>
 </div>
 
-<div id="dhmedia_devel_block_panel_block" class="devel-panel" title="Block">
-	<iframe id="devel-block" src="<?= $this->helper('devel/url')->getHelpUrl('panels/block/usage') ?>"></iframe>
+<div id="demacmedia_devel_block_panel_block" class="devel-panel" title="Block">
+	<iframe id="devel-block" src="<?php echo $this->helper('devel/url')->getHelpUrl('panels/block/usage') ?>"></iframe>
 </div>
 
-<div id="dhmedia_devel_block_panel_xml" class="devel-panel" title="Xml">
+<div id="demacmedia_devel_block_panel_xml" class="devel-panel" title="Xml">
 <textarea id="layout-xml" name="layout-xml">
 <?php echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n" ?>
 <?php echo $this->getLayoutXml() ?>
@@ -520,7 +521,7 @@ DevelUpdateNotifier.prototype =
 	},
 	getStatus: function(el)
 	{
-		new Ajax.Request('<?= Mage::getBaseUrl() ?>devel/self/hasupdate', {
+		new Ajax.Request('<?php Mage::getBaseUrl() ?>devel/self/hasupdate', {
 			method:'get',
 			onSuccess: function(transport) {
 				if (transport.responseText == 'Y') {
@@ -583,8 +584,8 @@ DevelHintBlock.prototype = Object.extend(new DevelHint(),
 			'layout': $(el).select('span[rel="layout"]')[0].innerHTML.evalJSON(),
 		}
 
-		//DevelGlobals.PanelManager.open('dhmedia_devel_block_panel_block', data.info.url);
-		DevelGlobals.PanelManager.load('dhmedia_devel_block_panel_docs', data.docs.url);
+		//DevelGlobals.PanelManager.open('demacmedia_devel_block_panel_block', data.info.url);
+		DevelGlobals.PanelManager.load('demacmedia_devel_block_panel_docs', data.docs.url);
 
 		var content = '';
 		var editorIds = [];
@@ -594,7 +595,7 @@ DevelHintBlock.prototype = Object.extend(new DevelHint(),
 			content += '<h2>' + layout.file + '</h2>';
 			content += '<em>' + layout.path + '</em>';
 			content += ' - <a target="devel-editor" href="' + layout.url 
-				+ '" onclick="DevelGlobals.PanelManager.open(\'dhmedia_devel_block_panel_editor\');">Edit</a>';
+				+ '" onclick="DevelGlobals.PanelManager.open(\'demacmedia_devel_block_panel_editor\');">Edit</a>';
 			layout.xml.each(function(xml, i){
 
 				xml = xml.replace(/\[\[/g, '<');
@@ -611,7 +612,7 @@ DevelHintBlock.prototype = Object.extend(new DevelHint(),
 			});
 		});
 		
-		DevelGlobals.PanelManager.setContent('dhmedia_devel_block_panel_block', content);
+		DevelGlobals.PanelManager.setContent('demacmedia_devel_block_panel_block', content);
 
 		editorIds.each(function(editorId){
 			CodeMirror.fromTextArea(document.getElementById(editorId), {
@@ -626,7 +627,7 @@ DevelHintBlock.prototype = Object.extend(new DevelHint(),
 			});
 		});
 		
-		DevelGlobals.PanelManager.open('dhmedia_devel_block_panel_block');
+		DevelGlobals.PanelManager.open('demacmedia_devel_block_panel_block');
 		
 		console.log('HINT BLOCK', name, data);
 		
@@ -650,7 +651,7 @@ DevelHintTemplate.prototype = Object.extend(new DevelHint(),
 			'editor': $(el).select('span[rel="editor"]')[0].innerHTML.evalJSON()
 		}
 
-		DevelGlobals.PanelManager.open('dhmedia_devel_block_panel_editor', data.editor.url);
+		DevelGlobals.PanelManager.open('demacmedia_devel_block_panel_editor', data.editor.url);
 		
 		console.log('HINT TEMPLATE', name, data);
 		
@@ -774,14 +775,14 @@ DevelPanel.prototype =
 
 document.observe("dom:loaded", function()
 {
-	new DevelForms('#dhmedia_devel_block_frontend form');
+	new DevelForms('#demacmedia_devel_block_frontend form');
 
 	new DevelHintBlock('.devel-hint .hints .hint[rel="block"]');
 	new DevelHintTemplate('.devel-hint .hints .hint[rel="template"]');
 	
 	DevelGlobals.PanelManager = new DevelPanelManager('.devel-panel');
 
-	new DevelUpdateNotifier('#dhmedia_devel_block_frontend .update-notifier-box');
+	new DevelUpdateNotifier('#demacmedia_devel_block_frontend .update-notifier-box');
 });
 
 var DevelGlobals = {};
@@ -797,7 +798,7 @@ var DevelGlobals = {};
 	@import url("<?php echo Mage::getBaseUrl('js') ?>codemirror/mode/clike/clike.css");
 
 	.CodeMirror { height: auto; }
-	#dhmedia_devel_block_panel_xml .CodeMirror { height: 100%; }
+	#demacmedia_devel_block_panel_xml .CodeMirror { height: 100%; }
 </style>
 	
 <script type="text/javascript" src="<?php echo Mage::getBaseUrl('js') ?>codemirror/lib/codemirror.js"></script> 
